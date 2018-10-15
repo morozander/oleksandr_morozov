@@ -1,0 +1,20 @@
+@import "app/common/normalize";
+@import "optional/bottomFooter"; //set page height to 100% and moves mainFooter to bottom.
+
+/* ----Variables--- */
+@import "variables";
+// @import "cssVariables";
+
+/* ----Fonts--- */
+@import "fonts";
+
+// ----Common-----
+@import "app/common/common";
+@import "app/common/common-blocks";
+
+//------Partials-----
+@import "app/partials/header";
+@import "app/partials/footer";
+
+//-----App-----
+@import "app/homePage";
