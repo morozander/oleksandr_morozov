@@ -186,7 +186,7 @@ gulp.task('build:css', function () {
     return gulp.src([path.src.scss, path.src.css]) 
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(gcmq())
+        // .pipe(gcmq())
         .pipe(postcss(postcssConfig))
         .pipe(cssnano({zindex: false}))
         .pipe(rename({ suffix: '.min' }))
@@ -252,6 +252,7 @@ gulp.task('copyProd:js', function () {
 gulp.task('buildProd:css', function () {
     return gulp.src([path.src.scss, path.src.css])
         .pipe(sass().on('error', sass.logError))
+        .pipe(gcmq())
         .pipe(postcss(postcssConfig))
         .pipe(cssnano({zindex: false}))
         .pipe(rename({ suffix: '.min' }))
