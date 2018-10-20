@@ -9,6 +9,7 @@ htmlhint            = require("gulp-htmlhint"),
 //CSS
 autoPrefixer            = require('autoprefixer'), // Autoprefixer for older browsers
 cssnano                 = require('gulp-cssnano'), // CSS minification
+gcmq                    = require('gulp-group-css-media-queries'), //CSS postprocessing: group media queries. Useful for postprocessing preprocessed CSS files.
 // cssnext              = require('postcss-cssnext'), // CSS4 syntax
 mediaPacker             = require('css-mqpacker'), // Gather all media queries together
 sass                    = require('gulp-sass'),
@@ -185,6 +186,7 @@ gulp.task('build:css', function () {
     return gulp.src([path.src.scss, path.src.css]) 
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
+        .pipe(gcmq())
         .pipe(postcss(postcssConfig))
         .pipe(cssnano({zindex: false}))
         .pipe(rename({ suffix: '.min' }))
