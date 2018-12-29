@@ -183,7 +183,7 @@ gulp.task('copy:js', function () {
 
 // --------CSS----------
 gulp.task('build:css', function () {
-    return gulp.src([path.src.scss, path.src.css]) 
+    return gulp.src([path.src.scss, path.src.css])        
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         // .pipe(gcmq())
