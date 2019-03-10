@@ -1,7 +1,7 @@
 div.mainWrapper {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	max-height: 100vh;
 
 	& > div.contentWrapper {
 		flex: 1 1 auto;
