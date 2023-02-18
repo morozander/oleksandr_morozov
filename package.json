@@ -8,7 +8,9 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "envTest",
-    "gulp": "./node_modules/.bin/gulp"
+    "gulp": "./node_modules/.bin/gulp",
+    "dev": "gulp dev",
+    "build": "gulp build:prod"
   },
   "repository": {
     "type": "git",

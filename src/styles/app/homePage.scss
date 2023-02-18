@@ -8,6 +8,15 @@
   
   background: #eaeaea;
 
+  .slick-slider {
+    height: 100vh;
+  }
+
+  .slick-list,
+  .slick-track {
+    height: 100%;
+  }
+
   .slider__item {
     position: relative;
 
