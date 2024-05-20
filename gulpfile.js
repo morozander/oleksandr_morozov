@@ -270,7 +270,10 @@ gulp.task('purgecss', () => {
        .pipe(
             purgecss({
                 content: ['production/*.html'],
-                whitelistPatterns: [/\bjs_/, /active/, /\bslick-/, /\bicon-/, /\bchosen-/, /\bcbox/, /colorbox/, /\blombard/, /\bgm/, /\bdungeon-quest-rpg/]
+                safelist: {
+                    standard: [/\bjs_/, /active/, /\bslick-/, /\bicon-/, /\bchosen-/, /\bcbox/, /colorbox/, /\blombard/, /\bgm/],
+                    deep: [/dungeon-quest-rpg$/],
+                }
             })
         )
        .pipe(gulp.dest('production/css/'))

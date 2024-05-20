@@ -39,7 +39,7 @@
     "gulp-imagemin": "^3.3.0",
     "gulp-notify": "^3.2.0",
     "gulp-postcss": "^8.0.0",
-    "gulp-purgecss": "^1.0.0",
+    "gulp-purgecss": "^6.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^5.1.0",
     "gulp-size": "^2.1.0",
