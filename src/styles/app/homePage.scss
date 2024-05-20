@@ -36,8 +36,8 @@
     
     border-radius: 3px;
     border: 2px solid grey;
+    background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
-    background-color: #fff;
     
     @media (min-width: 768px) {
       padding: 40px 50px;
@@ -73,7 +73,7 @@
     position: absolute;
     left: 10px;
     right: 10px;
-    bottom: 10px;
+    bottom: 350px;
     text-align: center;
     
     padding: 30px 20px;
@@ -121,4 +121,26 @@
       }
     }
   }
+}
+
+.game-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  width: 95%;
+  border: 2px solid grey;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+
+  @media (min-width: 768px) {
+    width: auto;
+  }
+}
+
+.game-title {
+  background: #fff;
+  padding-top: 5px;
+  margin: 0;
+  text-align: center;
 }
