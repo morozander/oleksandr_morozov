@@ -1,5 +1,4 @@
 @import "app/common/normalize";
-@import "libs/dungeon-quest-rpg";
 @import "optional/bottomFooter"; //set page height to 100% and moves mainFooter to bottom.
 @import "optional/mixins"; //set page height to 100% and moves mainFooter to bottom.
 
@@ -17,6 +16,8 @@
 //------Partials-----
 @import "app/partials/header";
 @import "app/partials/footer";
+@import "app/partials/dungeon-quest-rpg";
+
 
 //-----App-----
 @import "app/homePage";
